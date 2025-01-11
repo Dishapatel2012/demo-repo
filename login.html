@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+        }
+        .left-section{
+            width: 60%;
+            background-color: #1D1F33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-section img{
+            width: 70%;
+        }
+        .right-section{
+            width: 40%;
+            background-color: #262B45;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 50px;
+            color: #fff;
+        }
+        .right-section h2{
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .right-section p{
+            margin-bottom: 30px;
+            color: #bbb;
+        }
+        .input-group{
+            margin-bottom: 20px;
+        }
+        input[type="email"], input[type="password"]{
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #444;
+            background-color: #1D1F33;
+            color: #fff;
+        }
+        .checkbox-group{
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .checkbox-group input{
+            margin-right: 10px;
+        }
+        .forget-password{
+            color: #8f9cf0;
+            text-decoration: none;
+            font-size: 14px;
+            margin-left: auto;
+        }
+        .login-btn{
+            width: 100%;
+            padding: 12px;
+            background-color: #6C5CE7;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .login-btn:hover{
+            background-color: #5941D1;
+        }
+        .signup-link{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .signup-link a{
+            color: #8f9cf0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="solar_panel_image.png" alt="solar pannel Illustrator">
+        </div>
+        <div class="right-section">
+            <h2>Welcome to Akuntha</h2>
+            <p>Akuntha - The Sustained Energy</p>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="Enter Your Email" id="">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Your Password" id="">
+            </div>
+
+            <div class="checkbox-group">
+                <input type="checkbox" name="" id="remember">
+                <label for="remember">Remember Me</label>
+                <a href="#" class="forget-password">Forget Password?</a>
+            </div>
+
+            <button class="login-btn">Login</button>
+
+            <div class="signup-link">
+                New On Our Platform? <a href="#">Create an account</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
